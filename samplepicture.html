@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALIZ</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text color */
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #1e1e1e; /* Darker header background */
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .header-Left .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .header-Right a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1e1e1e; /* Dark footer background */
+            padding: 10px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 48px; /* Adjusted heading size */
+            color: #ffffff; /* Light color for the heading */
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .Picture-price {
+            font-size: 20px;
+            color: #ffcc00; /* Gold color for prices */
+            margin-top: 10px;
+        }
+        .Angles {
+            font-size: 20px;
+            color: #f1eddb; /* Gold color for prices */
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-Left">
+                <a href="login.html" class="logo">
+                    <img src="https://scontent.fmnl9-1.fna.fbcdn.net/v/t39.30808-6/411148852_778719297601816_7773284622599235922_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=PAVa1Atng1QQ7kNvgHPZc-6&_nc_ht=scontent.fmnl9-1.fna&_nc_gid=AERMwIpGafouBnDDeaDsUvi&oh=00_AYDaRXhpdbsQhQHVRrL0SLbn3frn3ss8Lga1wldqJuCHbQ&oe=670CE8F8" alt="Logo" class="logo-img" style="height: 40px; vertical-align: middle;">
+                    SAMPLE CV
+                </a>
+            </div>
+            <div class="header-Right">
+                <a href="home.html">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a class="active"  href="samplepicture.html">Sample Pictures</a>
+                <a href="#" id="logout" onclick="logout()">Logout</a>
+                
+            </div>
+        </div>
+    </header>
+    
+    <section>
+        <h1>Sample Products</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <a href="product1.html">
+                    <img src="C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_144313_002.jpg" alt="Product 1">
+                    <div class="Picture-price">₱59</div>
+                    <div class="Angles">Long Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product2.html">
+                    <img src="file:///C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_145042_026.jpg">
+                    <div class="Picture-price">₱59</div>
+                    <div class="Angles">Medium Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product3.html">
+                    <img src="file:///C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_145620_116.jpg" alt="Product 3">
+                    <div class="Picture-price">₱50</div>
+                    <div class="Angles">Cowboy Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product4.html">
+                    <img src="file:///C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_142600_050.jpg" alt="Product 4">
+                    <div class="Picture-price">₱59</div>
+                    <div class="Angles">High Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product5.html">
+                    <img src="file:///C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_143503_183.jpg" alt="Product 5">
+                    <div class="Picture-price">₱50</div>
+                    <div class="Angles">Low Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product6.html">
+                    <img src="file:///C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_143321_780.jpg" alt="Product 6">
+                    <div class="Picture-price">₱59</div>
+                    <div class="Angles">Wide Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product7.html">
+                    <img src="file:///C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/1727853068135.jpg" alt="Product 7">
+                    <div class="Picture-price">₱50</div>
+                    <div class="Angles">Dutch Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product8.html">
+                    <img src="C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_150742_453.jpg" alt="Product 8">
+                    <div class="Picture-price">₱59</div>
+                    <div class="Angles">POV Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product9.html">
+                    <img src="file:///C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_150452_823.jpg" alt="Product 9">
+                    <div class="Picture-price">₱40</div>
+                    <div class="Angles">Cutaway Shot</div>
+                </a>
+            </div>
+            <div class="product-card">
+                <a href="product10.html">
+                    <img src="file:///C:/Users/Hp/OneDrive/Desktop/Angles%20Pictures/IMG_20241002_150128_616.jpg" alt="Product 10">
+                    <div class="Picture-price">₱60</div>
+                    <div class="Angles">Extreme Tight Shot</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="footer">
+            © Copyright <strong><span>SALIZ</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        function logout() {
+            alert("You have been logged out!");
+            window.location.href = "login.html"; // Adjust as needed
+        }
+        
+    </script>
+</body>
+</html>

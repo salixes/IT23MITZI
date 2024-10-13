@@ -1,0 +1,102 @@
+body {
+    background-image: url("https://i.pinimg.com/564x/cd/f6/8e/cdf68ea7e4c3de2d2983f302cc457a69.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /* Makes the background fixed when scrolling */
+    filter: brightness(0.9); /* Slightly dim the background for better text visibility */
+}
+
+h1 {
+    color: rgb(15, 28, 21); /* Removed 'blue' to avoid invalid syntax */
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+}
+h2 {
+    color: rgb(240, 245, 242); /* Removed 'blue' to avoid invalid syntax */
+    text-align: justify;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+}
+
+.header {
+    overflow: hidden;
+    background-color: rgba(117, 18, 145, 0.8); /* Slight transparency for a softer look */
+}
+
+.header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: rgb(88, 3, 3);
+    color: rgb(96, 34, 138);
+}
+
+.header a.active {
+    background-color: rgb(54, 54, 1);
+    color: white;
+}
+
+.header-Right {
+    float: right;
+}
+
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+}
+
+.main-content {
+    flex: 1; /* Allow main content to grow and fill space */
+}
+
+.footer {
+    background-color: rgba(100, 11, 94, 0.9); /* Slight transparency */
+    color: rgb(249, 241, 249);
+    text-align: center;
+    padding: 10px 0; /* Add padding for spacing */
+}
+
+
+#content {
+    color: maroon;
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adds depth to the text */
+}
+.logo-img {
+    height: 40px; /* Adjust height as needed */
+    margin-right: 10px; /* Space between image and text */
+    vertical-align: middle; /* Aligns image with text */
+}
+.product-card img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
