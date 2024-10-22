@@ -2,29 +2,29 @@ body {
     background-image: url("https://i.pinimg.com/564x/cd/f6/8e/cdf68ea7e4c3de2d2983f302cc457a69.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; /* Makes the background fixed when scrolling */
-    filter: brightness(0.9); /* Slightly dim the background for better text visibility */
+    background-attachment: fixed; 
+    filter: brightness(0.9); 
 }
 
 h1 {
-    color: rgb(15, 28, 21); /* Removed 'blue' to avoid invalid syntax */
+    color: rgb(15, 28, 21); 
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 100px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 h2 {
-    color: rgb(240, 245, 242); /* Removed 'blue' to avoid invalid syntax */
+    color: rgb(240, 245, 242); 
     text-align: justify;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .header {
     overflow: hidden;
-    background-color: rgba(117, 18, 145, 0.8); /* Slight transparency for a softer look */
+    background-color: rgba(228, 203, 235, 0.8); 
 }
 
 .header a {
@@ -60,24 +60,24 @@ h2 {
 }
 
 html, body {
-    height: 100%; /* Ensure full height */
-    margin: 0; /* Remove default margin */
+    height: 100%;
+    margin: 0; 
 }
 
 body {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column; 
 }
 
 .main-content {
-    flex: 1; /* Allow main content to grow and fill space */
+    flex: 1; 
 }
 
 .footer {
-    background-color: rgba(100, 11, 94, 0.9); /* Slight transparency */
+    background-color: rgba(100, 11, 94, 0.9); 
     color: rgb(249, 241, 249);
     text-align: center;
-    padding: 10px 0; /* Add padding for spacing */
+    padding: 10px 0; 
 }
 
 
@@ -86,17 +86,39 @@ body {
     text-align: justify;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 75px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Adds depth to the text */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
 }
 .logo-img {
-    height: 40px; /* Adjust height as needed */
-    margin-right: 10px; /* Space between image and text */
-    vertical-align: middle; /* Aligns image with text */
+    height: 40px; 
+    margin-right: 10px; 
+    vertical-align: middle; 
 }
 .product-card img {
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
+    width: 100px; 
+    height: 100px; 
     border-radius: 8px;
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    object-fit: cover; 
+}
+.loginForm {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 8px;
+    object-fit: cover; 
+}
+@keyframes colorChange {
+    0% { background-color: #61e3fa; }
+    25% { background-color: #f1c40f; }
+    50% { background-color: #e67e22; }
+    75% { background-color: #e74c3c; }
+    100% { background-color: #61e3fa; }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    animation: colorChange 5s infinite; 
+    color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
