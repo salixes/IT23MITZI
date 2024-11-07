@@ -21,7 +21,14 @@ h2 {
     font-size: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
-
+h3, h4, h5, h6, hgroup {
+    color: rgb(240, 245, 242); 
+    text-align: justify;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
 .header {
     overflow: hidden;
     background-color: rgba(228, 203, 235, 0.8); 
@@ -121,4 +128,19 @@ body {
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+/* Hover effect for images */
+/* Hover effect for images */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* When hovering over the image, apply a floating effect */
+.product-card img:hover {
+    transform: translateY(-30px); /* Move the image upwards */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3); /* Add a shadow for a 3D effect */
+}
+
 

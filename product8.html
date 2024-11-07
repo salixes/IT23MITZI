@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #FF5733, #FFBD33, #75FF33, #33FF57, #33FFBD, #3357FF, #5733FF, #FF33A8); /* Rainbow background */
+            color: #333; /* Dark text for contrast */
+            animation: gradient 5s ease infinite; /* Animation for the background */
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #61e3fa; 
+            color: #333; 
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-Left .logo {
+            font-size: 24px;
+            text-decoration: none;
+            color: #333; /* Dark text color for the logo */
+        }
+
+        .header-Right a {
+            color: #333; /* Dark text color for links */
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .product-detail {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 2;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+
+        .product-info h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .product-info p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF5733;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            background-color: #FF5733;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buy-button:hover {
+            background-color: #e14e2d;
+        }
+
+        .additional-images {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            width: 50%; /* Make each image container a bit smaller */
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .image-item .image-info {
+            padding: 15px;
+        }
+
+        .image-item .image-info h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .image-item .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #FF5733;
+            margin-bottom: 10px;
+        }
+
+        .image-item .buy-now-section {
+            margin-top: 10px;
+        }
+
+        .image-item .buy-now-section p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* New "Buy Now" Panel Styling */
+        .buy-now-panel {
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .buy-now-panel img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .buy-now-panel h3 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .buy-now-panel .price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF5733;
+            margin-bottom: 20px;
+        }
+
+        .buy-now-panel .buy-button {
+            background-color: #FF5733;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .buy-now-panel .buy-button:hover {
+            background-color: #e14e2d;
+        }
+
+        /* Back Button Styling */
+        .back-button {
+            background-color: #FF5733;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #e14e2d;
+        }
+
+        /* "Back to Top" Button Styling */
+        #backToTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #FF5733;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none; /* Hidden by default */
+        }
+
+        #backToTopBtn:hover {
+            background-color: #e14e2d;
+        }
+    </style>
+</head>
+<body>
+    
+  
+    <div class="header">
+        <div class="header-Left">
+            <a href="home.html" class="logo">
+                <img src="c:\Users\Hp\OneDrive\Pictures\Scoolpurpose\download.jfif" class="logo-img" style="height: 40px; vertical-align: middle;">
+                Saliz Brushstrokes
+            </a>
+        </div>
+        <div class="header-Right">
+            <button class="back-button" onclick="history.back()">Go Back</button>
+        </div>
+    </div>
+
+   
+    <div class="product-detail">
+        <!-- Main Product Image -->
+        <div class="product-image">
+            <img src="https://i.pinimg.com/564x/84/f0/40/84f04047d8c73a68cb9c0231a5cedae1.jpg" alt="Blue Shades">
+        </div>
+        
+
+        <div class="product-info">
+            <h2>Saliz Black</h2>
+            <p>Experience the vibrant and calming blue shades perfect for sunny days. Whether you're lounging by the beach or simply enjoying the outdoors, these shades offer both style and comfort.</p>
+            <div class="price">₱59</div>
+            <button class="buy-button" onclick="buyNow('Saliz Violet', 59)">I want this</button>
+        </div>
+    </div>
+
+
+    <div class="additional-images">
+        <!-- Image 1 -->
+        <div class="image-item">
+            <img src="https://i.pinimg.com/564x/70/1d/cc/701dcc4092bc08966988cad6691184d5.jpg" alt="Blue Shades Close-up">
+            <div class="image-info">
+                <h3>Grey Black</h3>
+                <div class="price">₱100</div>
+                <button class="buy-button" onclick="buyNow('Mauve Violet', 100)">I want this</button>
+                <p>Check out the details of the Blue Shades up close! Perfect for those who want to see the quality.</p>
+            </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="image-item">
+            <img src="https://i.pinimg.com/564x/99/b4/2
