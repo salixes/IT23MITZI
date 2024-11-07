@@ -213,108 +213,67 @@
         .back-button:hover {
             background-color: #e14e2d;
         }
-
-        /* "Back to Top" Button Styling */
-        #backToTopBtn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background-color: #FF5733;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: none; /* Hidden by default */
-        }
-
-        #backToTopBtn:hover {
-            background-color: #e14e2d;
-        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="header-Left">
-            <a href="home.html" class="logo">
-                <img src="c:\Users\Hp\OneDrive\Pictures\Scoolpurpose\download.jfif" class="logo-img" style="height: 40px; vertical-align: middle;">
-                Saliz Brushstrokes
-            </a>
-        </div>
-        <div class="header-Right">
-            <button class="back-button" onclick="history.back()">Go Back</button>
+    
+  
+ 
+
+<div class="product-detail">
+    <!-- Main Product Image -->
+    <div class="product-image">
+        <img src="https://i.pinimg.com/564x/c6/f2/24/c6f224afd08c5fedaaca80bb01e0ed6e.jpg" alt="Blue Shades">
+    </div>
+    <div class="product-info">
+        <h2>Saliz Unicorn Gradient</h2>
+        <p>Experience the vibrant and calming Saliz Unicorn Gradient perfect for sunny days. Whether you're lounging by the beach or simply enjoying the outdoors, these shades offer both style and comfort.</p>
+        <div class="price">₱59</div>
+        <button class="buy-button" onclick="buyNow('Saliz Unicorn Gradient', 59)">I want this</button>
+    </div>
+</div>
+
+<div class="additional-images">
+    <!-- Image 1 -->
+    <div class="image-item">
+        <img src="https://i.pinimg.com/564x/b8/18/56/b8185650376568f9aba5f58b27176bf0.jpg" alt="Blue Shades Close-up">
+        <div class="image-info">
+            <h3>Gradient of Blue</h3>
+            <div class="price">₱100</div>
+            <button class="buy-button" onclick="buyNow('Gradient of Blue', 100)">I want this</button>
+            <p>Check out the details of the Gradient of blue up close! Perfect for those who want to see the quality.</p>
         </div>
     </div>
 
-    <div class="product-detail">
-        <!-- Main Product Image -->
-        <div class="product-image">
-            <img src="https://i.pinimg.com/564x/c6/f2/24/c6f224afd08c5fedaaca80bb01e0ed6e.jpg" alt="Blue Shades">
-        </div>
-        <div class="product-info">
-            <h2>Saliz Unicorn Gradient</h2>
-            <p>Experience the vibrant and calming blue shades perfect for sunny days. Whether you're lounging by the beach or simply enjoying the outdoors, these shades offer both style and comfort.</p>
-            <div class="price">₱59</div>
-            <button class="buy-button" onclick="buyNow('Saliz Unicorn Gradient', 59)">I want this</button>
+    <!-- Image 2 -->
+    <div class="image-item">
+        <img src="https://i.pinimg.com/564x/dc/eb/6e/dceb6e0b4485caa30d4143570e381790.jpg" alt="Blue Shades Side View">
+        <div class="image-info">
+            <h3>Gradient of Rediesh</h3>
+            <div class="price">₱89</div>
+            <button class="buy-button" onclick="buyNow('Gradient of Rediesh', 89)">I want this</button>
+            <p>From the side, these shades still look amazing. See how they sit perfectly on your face.</p>
         </div>
     </div>
 
-    <div class="additional-images">
-        <!-- Image 1 -->
-        <div class="image-item">
-            <img src="https://i.pinimg.com/564x/b8/18/56/b8185650376568f9aba5f58b27176bf0.jpg" alt="Blue Shades Close-up">
-            <div class="image-info">
-                <h3>Gradient of Blue</h3>
-                <div class="price">₱100</div>
-                <button class="buy-button" onclick="buyNow('Gradient of Blue', 100)">I want this</button>
-                <p>Check out the details of the Blue Shades up close! Perfect for those who want to see the quality.</p>
-            </div>
-        </div>
-
-        <!-- Image 2 -->
-        <div class="image-item">
-            <img src="https://i.pinimg.com/564x/dc/eb/6e/dceb6e0b4485caa30d4143570e381790.jpg" alt="Blue Shades Side View">
-            <div class="image-info">
-                <h3>Gradient of Rediesh</h3>
-                <div class="price">₱89</div>
-                <button class="buy-button" onclick="buyNow('Gradient of Rediesh', 89)">I want this</button>
-                <p>From the side, these shades still look amazing. See how they sit perfectly on your face.</p>
-            </div>
-        </div>
-
-        <!-- Image 3 -->
-        <div class="image-item">
-            <img src="https://i.pinimg.com/564x/b8/18/56/b8185650376568f9aba5f58b27176bf0.jpg" alt="Blue Shades Back">
-            <div class="image-info">
-                <h3>Gradient of Greeniesh</h3>
-                <div class="price">₱100</div>
-                <button class="buy-button" onclick="buyNow('Gradient of Greeniesh', 100)">I want this</button>
-                <p>Take a look at the back of the shades, designed with comfort and durability in mind.</p>
-            </div>
+    <!-- Image 3 -->
+    <div class="image-item">
+        <img src="https://i.pinimg.com/564x/b8/18/56/b8185650376568f9aba5f58b27176bf0.jpg" alt="Blue Shades Back">
+        <div class="image-info">
+            <h3>Gradient of Greeniesh</h3>
+            <div class="price">₱100</div>
+            <button class="buy-button" onclick="buyNow('Gradient of Greeniesh', 100)">I want this</button>
+            <p>Take a look at the back of the shades, designed with comfort and durability in mind.</p>
         </div>
     </div>
-
-    <!-- Back to Top Button -->
-    <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
+</div>
 
     <script>
-        // Show the "Back to Top" button when the user scrolls down
-        window.onscroll = function() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.getElementById("backToTopBtn").style.display = "block";
-            } else {
-                document.getElementById("backToTopBtn").style.display = "none";
-            }
-        };
-
-        // Function to smoothly scroll to the top
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
+        function buyNow(productName, price) {
+            alert(`You have added ${productName} for ₱${price} to the Store.`);
         }
     </script>
+
 </body>
 </html>
+
